@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Heart, Shield, Star, CheckCircle } from "lucide-react";
+import { ArrowRight, Heart, Shield, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/nurturly/section-heading";
-import { SafetyNotice } from "@/components/nurturly/safety-notice";
 import { CTASection } from "@/components/nurturly/cta-section";
 import { MediaPlaceholder, VideoCard } from "@/components/nurturly/media-placeholder";
 import {
@@ -26,91 +25,15 @@ export default function HomePage() {
   return (
     <main>
       {/* ─── HERO ─── */}
-      <section
-        className="relative overflow-hidden bg-gradient-to-br from-cream via-[#FFF5F9] to-[#F3EEFF] pt-10 pb-16 md:pt-16 md:pb-24"
-        aria-labelledby="hero-heading"
-      >
-        <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-lavender/15 blur-3xl pointer-events-none" aria-hidden="true" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-babyPink/15 blur-3xl pointer-events-none" aria-hidden="true" />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 bg-babyPink/20 border border-babyPink/30 text-warmBrown rounded-full px-4 py-1.5 text-sm font-display font-semibold mb-6">
-                <Star className="w-3.5 h-3.5 text-babyPink" fill="currentColor" />
-                Now taking waitlist signups
-              </div>
-              <h1 id="hero-heading" className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-warmBrown leading-[1.1] mb-6">
-                The{" "}
-                <span
-                  style={{
-                    background: "linear-gradient(135deg, #FFC4D6 0%, #B8A3E8 40%, #9ED7F5 80%, #FFD6BA 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                >
-                  FoldAway™
-                </span>{" "}
-                bedside station for easier nighttime changes.
-              </h1>
-              <p className="text-softGray font-body text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
-                Slides under your mattress, raises to your perfect height, and folds open when you need it — so you can keep baby essentials close during those middle-of-the-night moments.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-warmBrown hover:bg-warmBrown/90 text-white rounded-2xl font-display font-bold text-base gap-2 shadow-soft"
-                >
-                  <Link href="#waitlist">
-                    <Heart className="w-5 h-5" fill="currentColor" />
-                    Join the Waitlist
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="border-warmBrown/30 text-warmBrown hover:bg-warmBrown/5 rounded-2xl font-display font-bold text-base gap-2"
-                >
-                  <Link href="/product">
-                    See the Product
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </Button>
-              </div>
-
-              <SafetyNotice variant="inline" />
-            </div>
-
-            <div className="relative">
-              <div className="relative rounded-[2rem] overflow-hidden">
-                <MediaPlaceholder
-                  label="Nurturly FoldAway™ beside cozy bed with pastel plush dino, wipes, and diapers"
-                  type="image"
-                  aspectRatio="portrait"
-                  gradient="from-babyPink/30 via-lavender/20 to-softMint/30"
-                  className="w-full"
-                />
-              </div>
-              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-2.5 shadow-soft flex items-center gap-2">
-                <Heart className="w-4 h-4 text-babyPink" fill="currentColor" />
-                <span className="text-sm font-display font-bold text-warmBrown">Made for real-life moments 💗</span>
-              </div>
-              <div className="absolute -right-4 top-12 bg-white rounded-2xl p-3.5 shadow-card hidden lg:flex items-center gap-2.5">
-                <div className="p-2 bg-softMint/20 rounded-xl">
-                  <CheckCircle className="w-5 h-5 text-sage" />
-                </div>
-                <div>
-                  <p className="text-xs font-display font-bold text-warmBrown">Height adjustable</p>
-                  <p className="text-xs text-softGray">Fits most bed setups</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section aria-labelledby="hero-heading">
+        <h1 id="hero-heading" className="sr-only">
+          The FoldAway™ bedside station for easier nighttime changes.
+        </h1>
+        <img
+          src="/images/banner-hero.png"
+          alt="Nurturly FoldAway™ bedside changing station — The FoldAway™ bedside station for easier nighttime changes"
+          className="w-full block"
+        />
       </section>
 
       {/* ─── BENEFIT STRIP ─── */}

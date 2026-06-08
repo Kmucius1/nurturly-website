@@ -67,7 +67,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-cream antialiased">
         <AnnouncementBar />
         <SiteHeader />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 px-4 md:px-10 lg:px-[192px]">{children}</div>
         <SiteFooter />
       </body>
     </html>
