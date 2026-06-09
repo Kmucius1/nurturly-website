@@ -45,7 +45,7 @@ export function SiteFooter() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <Logo size="md" href="/" className="[&_span]:text-white" />
+              <Logo size="md" href="/" theme="dark" />
             </div>
             <p className="text-warmBeige/80 font-body text-sm leading-relaxed mb-6">
               Thoughtful products for real parent life.
