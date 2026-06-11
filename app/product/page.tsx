@@ -48,7 +48,7 @@ export default function ProductPage() {
                   className="w-full"
                 />
               </div>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 sm:grid-cols-3 gap-3">
                 {productImages.slice(1).map((img) => (
                   <div key={img.label} className="rounded-2xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
                     <MediaPlaceholder

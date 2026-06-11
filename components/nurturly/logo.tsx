@@ -12,7 +12,7 @@ interface LogoProps {
   href?: string;
 }
 
-const heights = { sm: 52, md: 68, lg: 92 };
+const heights = { sm: 44, md: 56, lg: 72 };
 
 export function Logo({ size = "md", theme = "light", className, href = "/" }: LogoProps) {
   const h = heights[size];

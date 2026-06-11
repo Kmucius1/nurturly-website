@@ -64,10 +64,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${nunito.variable} ${nunitoSans.variable} h-full`}>
-      <body className="min-h-full flex flex-col bg-cream antialiased">
+      <body className="min-h-full flex flex-col bg-cream antialiased w-full overflow-x-hidden">
         <AnnouncementBar />
         <SiteHeader />
-        <div className="flex-1 px-4 md:px-10 lg:px-[192px]">{children}</div>
+        <div className="flex-1">{children}</div>
         <SiteFooter />
       </body>
     </html>
