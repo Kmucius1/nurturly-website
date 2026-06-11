@@ -83,6 +83,7 @@ export default function OurStoryPage() {
               src="/videos/founder-story-ben.mp4"
               gradient="from-peach/30 via-babyPink/20 to-lavender/30"
               className="rounded-3xl overflow-hidden"
+              poster="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=900&q=80"
             />
           </div>
 
@@ -112,18 +113,19 @@ export default function OurStoryPage() {
           />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Ben's original notes", gradient: "from-peach/30 to-babyPink/30" },
-              { label: "First product sketch", gradient: "from-babyPink/30 to-lavender/30" },
-              { label: "Product concept render", gradient: "from-lavender/30 to-babyBlue/30" },
-              { label: "Bracket detail sketch", gradient: "from-babyBlue/30 to-softMint/30" },
-              { label: "Height adjustment concept", gradient: "from-softMint/30 to-butteryYellow/30" },
-              { label: "Prototype frame", gradient: "from-butteryYellow/30 to-peach/30" },
+              { label: "Ben's original notes", gradient: "from-peach/30 to-babyPink/30", src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" },
+              { label: "First product sketch", gradient: "from-babyPink/30 to-lavender/30", src: "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?auto=format&fit=crop&w=600&q=80" },
+              { label: "Product concept render", gradient: "from-lavender/30 to-babyBlue/30", src: "https://images.unsplash.com/photo-1581726690015-c9861fa5057f?auto=format&fit=crop&w=600&q=80" },
+              { label: "Bracket detail sketch", gradient: "from-babyBlue/30 to-softMint/30", src: "https://images.unsplash.com/photo-1483794344563-d27a8d18014e?auto=format&fit=crop&w=600&q=80" },
+              { label: "Height adjustment concept", gradient: "from-softMint/30 to-butteryYellow/30", src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" },
+              { label: "Prototype frame", gradient: "from-butteryYellow/30 to-peach/30", src: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=600&q=80" },
             ].map((img) => (
               <div key={img.label} className="rounded-2xl overflow-hidden">
                 <MediaPlaceholder
                   label={img.label}
                   gradient={img.gradient}
                   aspectRatio="square"
+                  src={img.src}
                 />
               </div>
             ))}

@@ -71,6 +71,7 @@ export default function HomePage() {
                   gradient={card.color}
                   aspectRatio="square"
                   className="rounded-t-3xl rounded-b-none"
+                  src={card.image}
                 />
                 <div className="p-4">
                   <p className="font-display font-bold text-warmBrown text-sm">{card.title}</p>
@@ -187,6 +188,7 @@ export default function HomePage() {
               src="/videos/founder-story-ben.mp4"
               gradient="from-peach/30 via-babyPink/20 to-lavender/30"
               className="rounded-[2rem] overflow-hidden"
+              poster="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80"
             />
           </div>
         </div>
@@ -265,6 +267,7 @@ export default function HomePage() {
               src="/videos/product-development.mp4"
               gradient="from-babyBlue/30 via-softMint/20 to-lavender/30"
               className="rounded-[2rem] overflow-hidden"
+              poster="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80"
             />
           </div>
         </div>

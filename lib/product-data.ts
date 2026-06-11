@@ -200,6 +200,7 @@ export const PARENT_USE_CASES = [
     icon: "🌙",
     animal: "bunny",
     color: "from-lavender/20 to-babyPink/20",
+    image: "https://images.unsplash.com/photo-1611531385446-f7e6d131e1d0?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Small bedrooms",
@@ -207,6 +208,7 @@ export const PARENT_USE_CASES = [
     icon: "🏠",
     animal: "elephant",
     color: "from-babyBlue/20 to-softMint/20",
+    image: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Apartment living",
@@ -214,6 +216,7 @@ export const PARENT_USE_CASES = [
     icon: "🏙️",
     animal: "bear",
     color: "from-softMint/20 to-butteryYellow/20",
+    image: "https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Postpartum recovery",
@@ -221,6 +224,7 @@ export const PARENT_USE_CASES = [
     icon: "💗",
     animal: "fox",
     color: "from-babyPink/20 to-peach/20",
+    image: "https://images.unsplash.com/photo-1471286174890-9c112ac6476a?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Baby registry gift",
@@ -228,6 +232,7 @@ export const PARENT_USE_CASES = [
     icon: "🎁",
     animal: "giraffe",
     color: "from-peach/20 to-butteryYellow/20",
+    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=600&q=80",
   },
   {
     title: "Grandparent nurseries",
@@ -235,6 +240,7 @@ export const PARENT_USE_CASES = [
     icon: "👴",
     animal: "sloth",
     color: "from-butteryYellow/20 to-lavender/20",
+    image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80",
   },
 ];
 
@@ -269,25 +275,25 @@ export const PRODUCT_SHOWCASE_CARDS = [
   {
     title: "Open & within reach",
     caption: "Changing surface folds open right beside the bed",
-    image: "/images/product/foldaway-open-side.png",
+    image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=600&q=80",
     color: "from-babyPink/30 to-lavender/30",
   },
   {
     title: "Tucks away neatly",
     caption: "Folds flat under the mattress when not in use",
-    image: "/images/product/foldaway-folded-under-bed.png",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80",
     color: "from-babyBlue/30 to-softMint/30",
   },
   {
     title: "Smart storage",
     caption: "Diapers, wipes, and essentials all within arm's reach",
-    image: "/images/product/foldaway-storage-closeup.png",
+    image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80",
     color: "from-softMint/30 to-butteryYellow/30",
   },
   {
     title: "Adjusts to you",
     caption: "Height adjustable to fit most bed setups",
-    image: "/images/product/foldaway-height-adjustment.png",
+    image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80",
     color: "from-peach/30 to-babyPink/30",
   },
 ];

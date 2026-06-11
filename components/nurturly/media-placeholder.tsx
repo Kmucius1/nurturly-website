@@ -8,6 +8,7 @@ interface MediaPlaceholderProps {
   gradient?: string;
   className?: string;
   showIcon?: boolean;
+  src?: string;
 }
 
 const aspectRatioClasses = {
@@ -33,9 +34,26 @@ export function MediaPlaceholder({
   gradient,
   className,
   showIcon = true,
+  src,
 }: MediaPlaceholderProps) {
   const gradientClass = gradient || defaultGradients[Math.floor(Math.random() * defaultGradients.length)];
   const Icon = type === "video" ? Video : ImageIcon;
+
+  if (src) {
+    return (
+      <div
+        className={cn(
+          "relative overflow-hidden rounded-2xl",
+          aspectRatioClasses[aspectRatio],
+          className
+        )}
+        role="img"
+        aria-label={label || (type === "video" ? "Video placeholder" : "Image placeholder")}
+      >
+        <img src={src} alt={label || ""} className="w-full h-full object-cover" />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -82,11 +100,13 @@ export function VideoCard({
   src,
   gradient,
   className,
+  poster,
 }: {
   label?: string;
   src?: string;
   gradient?: string;
   className?: string;
+  poster?: string;
 }) {
   return (
     <div className={cn("relative group cursor-pointer", className)}>
@@ -95,6 +115,7 @@ export function VideoCard({
         type="video"
         aspectRatio="landscape"
         gradient={gradient}
+        src={poster}
         className="group-hover:scale-[1.02] transition-transform duration-300"
       />
       <div className="absolute inset-0 flex items-center justify-center">

@@ -86,6 +86,7 @@ export default async function BlogPostPage({ params }: Props) {
             gradient={gradient}
             aspectRatio="wide"
             className="rounded-t-3xl"
+            src={post.heroImage}
           />
         </div>
       </section>

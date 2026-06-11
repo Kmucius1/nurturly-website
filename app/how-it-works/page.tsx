@@ -23,6 +23,15 @@ const stepColors = [
   "from-sage/20 to-softMint/20",
 ];
 
+const stepImages = [
+  "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80",
+];
+
 export default function HowItWorksPage() {
   return (
     <main className="min-h-screen bg-cream">
@@ -75,6 +84,7 @@ export default function HowItWorksPage() {
                     gradient={stepColors[index]}
                     aspectRatio="landscape"
                     className="rounded-3xl w-full"
+                    src={stepImages[index]}
                   />
                 </div>
               </div>
@@ -96,6 +106,7 @@ export default function HowItWorksPage() {
             src="/videos/how-it-works-animation.mp4"
             gradient="from-babyBlue/30 via-lavender/20 to-softMint/30"
             className="rounded-3xl overflow-hidden"
+            poster="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=900&q=80"
           />
         </div>
       </section>

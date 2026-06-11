@@ -35,6 +35,7 @@ export function BlogCard({ post, variant = "default", className }: BlogCardProps
             aspectRatio="square"
             className="w-full h-full"
             showIcon={false}
+            src={post.heroImage}
           />
         </div>
         <div className="flex-1 min-w-0">
@@ -65,6 +66,7 @@ export function BlogCard({ post, variant = "default", className }: BlogCardProps
           gradient={getGradient(post.slug)}
           aspectRatio="wide"
           className="rounded-t-3xl rounded-b-none"
+          src={post.heroImage}
         />
         <div className="p-6">
           <div className="flex items-center gap-2 mb-3">
@@ -101,6 +103,7 @@ export function BlogCard({ post, variant = "default", className }: BlogCardProps
         gradient={getGradient(post.slug)}
         aspectRatio="landscape"
         className="rounded-t-3xl rounded-b-none"
+        src={post.heroImage}
       />
       <div className="p-5">
         <div className="flex items-center gap-2 mb-2">

@@ -20,7 +20,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2025-03-15",
     excerpt:
       "Nighttime diaper changes don't have to mean full wake-ups for the whole family. Here are practical strategies to keep things quick, calm, and close.",
-    heroImage: "/images/blog/nighttime-diaper-changes.jpg",
+    heroImage: "https://images.unsplash.com/photo-1590422749897-47036da0b0ff?auto=format&fit=crop&w=800&q=80",
     tags: ["nighttime", "newborn", "diaper changes", "sleep"],
     relatedSlugs: ["newborn-bedside-essentials", "new-dad-newborn-nights", "postpartum-bedroom-setup"],
     content: `
@@ -72,7 +72,7 @@ That's the whole idea behind the Nurturly FoldAway™ — a changing station tha
     date: "2025-03-22",
     excerpt:
       "Your bedside setup in those first weeks can make nighttime easier — or harder. Here's what actually belongs within arm's reach.",
-    heroImage: "/images/blog/newborn-bedside-essentials.jpg",
+    heroImage: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80",
     tags: ["newborn", "bedside", "setup", "essentials"],
     relatedSlugs: ["nighttime-diaper-changes-easier", "postpartum-bedroom-setup", "small-nursery-ideas"],
     content: `
@@ -127,7 +127,7 @@ Wherever you set up your nighttime station, keep safety in mind. Any surface whe
     date: "2025-04-02",
     excerpt:
       "Apartment parents, small bedroom parents, minimalist parents — this one's for you. How to do a fully functional baby setup without the square footage.",
-    heroImage: "/images/blog/small-nursery-ideas.jpg",
+    heroImage: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=80",
     tags: ["small nursery", "apartment", "baby gear", "space-saving"],
     relatedSlugs: ["baby-registry-must-haves", "postpartum-bedroom-setup", "newborn-bedside-essentials"],
     content: `
@@ -182,7 +182,7 @@ The answer to those questions should guide your choices.
     date: "2025-04-10",
     excerpt:
       "The registry is full of things that sound helpful. Here's the honest list — what new parents actually reach for, and what stays in the box.",
-    heroImage: "/images/blog/baby-registry-must-haves.jpg",
+    heroImage: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80",
     tags: ["baby registry", "newborn", "gift ideas", "essentials"],
     relatedSlugs: ["small-nursery-ideas", "nighttime-diaper-changes-easier", "new-dad-newborn-nights"],
     content: `
@@ -244,7 +244,7 @@ Products that make nighttime changes easier, keep essentials close, and minimize
     date: "2025-04-18",
     excerpt:
       "Your bedroom in the postpartum weeks needs to work differently. Here's how to set it up to support rest, recovery, and newborn care in the same space.",
-    heroImage: "/images/blog/postpartum-bedroom-setup.jpg",
+    heroImage: "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?auto=format&fit=crop&w=800&q=80",
     tags: ["postpartum", "recovery", "bedroom setup", "newborn"],
     relatedSlugs: ["newborn-bedside-essentials", "nighttime-diaper-changes-easier", "small-nursery-ideas"],
     content: `
@@ -304,7 +304,7 @@ Set it up before baby arrives while you have the energy. You'll thank yourself a
     date: "2025-04-25",
     excerpt:
       "Newborn nights are a team sport. Here's how dads and non-birthing partners can show up, share the load, and survive the early weeks.",
-    heroImage: "/images/blog/new-dad-newborn-nights.jpg",
+    heroImage: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
     tags: ["dad", "newborn", "night shifts", "parent partnership"],
     relatedSlugs: ["nighttime-diaper-changes-easier", "postpartum-bedroom-setup", "newborn-bedside-essentials"],
     content: `
@@ -363,7 +363,7 @@ Ben built FoldAway™ because he wanted to do more on those overnight shifts wit
     date: "2025-05-03",
     excerpt:
       "A full-size changing table isn't the only option. Here are the best alternatives for small apartments, small bedrooms, and parents who want flexibility.",
-    heroImage: "/images/blog/small-nursery-ideas.jpg",
+    heroImage: "https://images.unsplash.com/photo-1471286174890-9c112ac6476a?auto=format&fit=crop&w=800&q=80",
     tags: ["changing table", "small space", "alternatives", "nursery"],
     relatedSlugs: ["small-nursery-ideas", "baby-registry-must-haves", "newborn-bedside-essentials"],
     content: `
@@ -430,7 +430,7 @@ When evaluating options, ask: Where will changes actually happen most often? At 
     date: "2025-05-12",
     excerpt:
       "Creating a functional baby space in a small apartment takes intentionality — but it's more than possible. Here's how to make it work.",
-    heroImage: "/images/blog/small-nursery-ideas.jpg",
+    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80",
     tags: ["apartment", "small nursery", "nursery ideas", "space-saving"],
     relatedSlugs: ["small-nursery-ideas", "changing-table-alternatives", "postpartum-bedroom-setup"],
     content: `

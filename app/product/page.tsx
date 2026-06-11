@@ -23,10 +23,10 @@ export const metadata: Metadata = {
 };
 
 const productImages = [
-  { label: "FoldAway™ Hero — Beside Bed", gradient: "from-babyPink/30 via-lavender/20 to-babyBlue/30" },
-  { label: "Open changing surface", gradient: "from-softMint/30 via-babyBlue/20 to-lavender/30" },
-  { label: "Folded under mattress", gradient: "from-peach/30 via-babyPink/20 to-lavender/30" },
-  { label: "Storage compartments", gradient: "from-butteryYellow/30 via-peach/20 to-babyPink/30" },
+  { label: "FoldAway™ Hero — Beside Bed", gradient: "from-babyPink/30 via-lavender/20 to-babyBlue/30", src: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80" },
+  { label: "Open changing surface", gradient: "from-softMint/30 via-babyBlue/20 to-lavender/30", src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80" },
+  { label: "Folded under mattress", gradient: "from-peach/30 via-babyPink/20 to-lavender/30", src: "https://images.unsplash.com/photo-1471286174890-9c112ac6476a?auto=format&fit=crop&w=600&q=80" },
+  { label: "Storage compartments", gradient: "from-butteryYellow/30 via-peach/20 to-babyPink/30", src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80" },
 ];
 
 export default function ProductPage() {
@@ -46,6 +46,7 @@ export default function ProductPage() {
                   gradient="from-babyPink/30 via-lavender/20 to-softMint/30"
                   aspectRatio="portrait"
                   className="w-full"
+                  src={productImages[0].src}
                 />
               </div>
               <div className="grid grid-cols-3 sm:grid-cols-3 gap-3">
@@ -56,6 +57,7 @@ export default function ProductPage() {
                       gradient={img.gradient}
                       aspectRatio="square"
                       showIcon={false}
+                      src={img.src}
                     />
                   </div>
                 ))}
@@ -151,6 +153,7 @@ export default function ProductPage() {
               gradient="from-softMint/30 via-babyBlue/20 to-lavender/30"
               aspectRatio="landscape"
               className="rounded-3xl"
+              src="https://images.unsplash.com/photo-1590422749897-47036da0b0ff?auto=format&fit=crop&w=800&q=80"
             />
           </div>
         </div>
@@ -193,18 +196,19 @@ export default function ProductPage() {
           />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { label: "Open side view", gradient: "from-babyPink/30 to-lavender/30" },
-              { label: "Height adjustment detail", gradient: "from-babyBlue/30 to-softMint/30" },
-              { label: "Storage closeup", gradient: "from-softMint/30 to-butteryYellow/30" },
-              { label: "Folded under mattress", gradient: "from-lavender/30 to-babyPink/30" },
-              { label: "Changing pad detail", gradient: "from-peach/30 to-babyPink/30" },
-              { label: "Bracket detail", gradient: "from-butteryYellow/30 to-peach/30" },
+              { label: "Open side view", gradient: "from-babyPink/30 to-lavender/30", src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=600&q=80" },
+              { label: "Height adjustment detail", gradient: "from-babyBlue/30 to-softMint/30", src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80" },
+              { label: "Storage closeup", gradient: "from-softMint/30 to-butteryYellow/30", src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80" },
+              { label: "Folded under mattress", gradient: "from-lavender/30 to-babyPink/30", src: "https://images.unsplash.com/photo-1471286174890-9c112ac6476a?auto=format&fit=crop&w=600&q=80" },
+              { label: "Changing pad detail", gradient: "from-peach/30 to-babyPink/30", src: "https://images.unsplash.com/photo-1590422749897-47036da0b0ff?auto=format&fit=crop&w=600&q=80" },
+              { label: "Bracket detail", gradient: "from-butteryYellow/30 to-peach/30", src: "https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=600&q=80" },
             ].map((item) => (
               <div key={item.label} className="rounded-2xl overflow-hidden">
                 <MediaPlaceholder
                   label={item.label}
                   gradient={item.gradient}
                   aspectRatio="square"
+                  src={item.src}
                 />
               </div>
             ))}
