@@ -23,7 +23,7 @@ export default function BlogPage() {
           <span className="inline-flex items-center bg-babyPink/20 text-warmBrown border border-babyPink/30 font-display font-semibold rounded-full text-sm px-3.5 py-1 mb-5">
             The Nurturly Blog
           </span>
-          <h1 id="blog-heading" className="font-display font-extrabold text-4xl md:text-5xl text-warmBrown mb-4">
+          <h1 id="blog-heading" className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-warmBrown mb-4">
             Real tips for real parent life.
           </h1>
           <p className="text-softGray font-body text-lg max-w-xl mx-auto">

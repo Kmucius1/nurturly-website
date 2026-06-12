@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const productImages = [
-  { label: "FoldAway™ Hero — Beside Bed", gradient: "from-babyPink/30 via-lavender/20 to-babyBlue/30", src: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=800&q=80" },
+  { label: "FoldAway™ Hero — Beside Bed", gradient: "from-babyPink/30 via-lavender/20 to-babyBlue/30", src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=80" },
   { label: "Open changing surface", gradient: "from-softMint/30 via-babyBlue/20 to-lavender/30", src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80" },
   { label: "Folded under mattress", gradient: "from-peach/30 via-babyPink/20 to-lavender/30", src: "https://images.unsplash.com/photo-1471286174890-9c112ac6476a?auto=format&fit=crop&w=600&q=80" },
   { label: "Storage compartments", gradient: "from-butteryYellow/30 via-peach/20 to-babyPink/30", src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80" },

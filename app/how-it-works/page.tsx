@@ -41,7 +41,7 @@ export default function HowItWorksPage() {
           <span className="inline-flex items-center bg-babyBlue/20 text-warmBrown border border-babyBlue/30 font-display font-semibold rounded-full text-sm px-3.5 py-1 mb-5">
             The Product
           </span>
-          <h1 id="hiw-heading" className="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl text-warmBrown mb-5 leading-tight">
+          <h1 id="hiw-heading" className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-warmBrown mb-5 leading-tight">
             How Nurturly FoldAway™ works
           </h1>
           <p className="text-softGray font-body text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">

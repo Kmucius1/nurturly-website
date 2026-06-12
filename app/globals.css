@@ -118,12 +118,22 @@ body {
   font-family: "Nunito Sans", Inter, ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   line-height: 1.6;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", ui-rounded, system-ui, sans-serif;
   font-weight: 700;
   color: #4F3D33;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
