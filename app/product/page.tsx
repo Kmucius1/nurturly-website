@@ -22,12 +22,6 @@ export const metadata: Metadata = {
     "The space-saving bedside changing station that slides under your mattress, raises to your height, and folds away when done. Currently in development — join the waitlist.",
 };
 
-const productImages = [
-  { label: "FoldAway™ Hero — Beside Bed", gradient: "from-babyPink/30 via-lavender/20 to-babyBlue/30", src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=800&q=80" },
-  { label: "Open changing surface", gradient: "from-softMint/30 via-babyBlue/20 to-lavender/30", src: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=600&q=80" },
-  { label: "Folded under mattress", gradient: "from-peach/30 via-babyPink/20 to-lavender/30", src: "https://images.unsplash.com/photo-1471286174890-9c112ac6476a?auto=format&fit=crop&w=600&q=80" },
-  { label: "Storage compartments", gradient: "from-butteryYellow/30 via-peach/20 to-babyPink/30", src: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80" },
-];
 
 export default function ProductPage() {
   const productFAQ = FAQ_DATA.flatMap((cat) => cat.items).slice(0, 6);
@@ -38,30 +32,13 @@ export default function ProductPage() {
       <section className="bg-gradient-to-br from-cream via-[#FFF5F9] to-[#F3EEFF] pt-10 pb-16 md:pt-16 md:pb-24" aria-labelledby="product-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Gallery */}
-            <div className="space-y-4">
-              <div className="rounded-[2rem] overflow-hidden">
-                <MediaPlaceholder
-                  label="Nurturly FoldAway™ bedside changing station hero view"
-                  gradient="from-babyPink/30 via-lavender/20 to-softMint/30"
-                  aspectRatio="portrait"
-                  className="w-full"
-                  src={productImages[0].src}
-                />
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 gap-3">
-                {productImages.slice(1).map((img) => (
-                  <div key={img.label} className="rounded-2xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
-                    <MediaPlaceholder
-                      label={img.label}
-                      gradient={img.gradient}
-                      aspectRatio="square"
-                      showIcon={false}
-                      src={img.src}
-                    />
-                  </div>
-                ))}
-              </div>
+            {/* Diagram */}
+            <div className="rounded-[2rem] overflow-hidden bg-white border border-warmBeige/40 shadow-card p-4 md:p-6">
+              <img
+                src="/images/product-diagram.png"
+                alt="FoldAway™ open/use position and folded/storage position diagram with labeled components"
+                className="w-full h-auto object-contain"
+              />
             </div>
 
             {/* Product Info */}
